@@ -3,9 +3,6 @@ import numpy as np
 import os
 import time
 
-# WAIT ill get spotify music
-# YEAH MERRY CHRISTMAS
-
 while True:
     try: 
         n = int(input("Introduce el valor de columnas: "))
@@ -16,15 +13,9 @@ while True:
     except ValueError as e:
         print(f"Error: {e}")
 
-# HOW DO I EVEN DO THIS
-
 arreglo = np.random.randint(1, 15, n)
 
-# i finally got the symbol omg
-
 simbolo =  "█"
-
-#arreglo = np.array([1, 6, 14, 12, 14, 8, 3, 2, 11, 8])
 
 max_val = int(arreglo.max())
 
@@ -42,24 +33,11 @@ def graficar():
             print(arreglo[i], end=" ")
         else:
             print(arreglo[i], end="  ")
-    # this fixes it 
     print()
 
 print("Original: ")
 graficar()
 time.sleep(5)
-# DONT TELL ME I NEED FAKING MULTITHREADING OR I WILL LOSE MY MIND
-
-#print("Grafica 2: ")
-#graficar()
-
-# wtf is that ad
-
-# HOW DOES BUBBLE SORT EVEN WORK
-
-# NOTE: i actually need to look for this on google without gemini btw stackoverflow maybe
-
-# NOTE: I foujnd this on WIKIPEDIA
 
 for index, value in enumerate(arreglo):
     for i in range(1, n - 1):
